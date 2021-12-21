@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php-apache-highmem
+spec:
+  selector:
+    matchLabels:
+      run: php-apache-highmem
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: php-apache-highmem
+    spec:
+      nodeSelector: 
+        machine-type: highmem
+      containers:
+      - name: php-apache
+        image: k8s.gcr.io/hpa-example
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 1600m
+          requests:
+            cpu: 1000m
