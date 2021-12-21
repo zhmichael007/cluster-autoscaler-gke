@@ -62,6 +62,6 @@ for instancetype in ${HIGH_CPU_SPOT[@]}; do
 	--spot
 done
 
-kubectl apply -f priority-expander-configmap-gce.yaml
-kubectl apply -f cluster-autoscaler-autodiscover-gce.yaml
+kubectl apply -f priority-expander-configmap-gke.yaml
+kubectl apply -f cluster-autoscaler-autodiscover-gke.yaml
 kubectl create clusterrolebinding root-cluster-admin-binding --clusterrole=cluster-admin --serviceaccount=kube-system:cluster-autoscaler
