@@ -7,7 +7,7 @@ cd cluster-autoscaler-gke/
 bash setup.sh
 
 the node pool design:  
-![image](https://github.com/zhmichael007/cluster-autoscaler-gke/blob/main/image/nodepooldesign.png)
+<img src="https://github.com/zhmichael007/cluster-autoscaler-gke/blob/main/image/nodepooldesign.png" width="50%" height="50%">
 
 
 When the cluste and node pool has been created, and php-apache-highcpu, php-apache-highmem has been deployed：  
