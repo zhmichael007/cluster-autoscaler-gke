@@ -10,7 +10,7 @@ the node pool design:
 <img src="https://github.com/zhmichael007/cluster-autoscaler-gke/blob/main/image/nodepooldesign.png" width="75%" height="75%">
 
 
-When the cluste and node pool has been created, and php-apache-highcpu, php-apache-highmem has been deployed：  
+When finished the running of setup.sh, the GKE cluster and node pool will be created, and php-apache-highcpu, php-apache-highmem has been deployed：  
 <img src="https://github.com/zhmichael007/cluster-autoscaler-gke/blob/main/image/gkecluster_configmap.png" width="75%" height="75%">
 
 
