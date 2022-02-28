@@ -9,7 +9,9 @@ open setup.sh, modify the service account name in this file:
 SA_NAME=<Your Service Account Name>
 ```
 
+```bash
 bash setup.sh
+```
 
 the node pool design:  
 <img src="https://github.com/zhmichael007/cluster-autoscaler-gke/blob/main/image/nodepooldesign.png" width="75%" height="75%">
@@ -21,7 +23,9 @@ When finished the running of setup.sh, the GKE cluster and node pool will be cre
 
 
 change the replica of php-apache-highcpu to 30, you will find the spot t2d will be scaled out because it has the high priority.   
+```bash
 kubectl scale deployments/php-apache-highcpu --replicas=30  
+```
 <img src="https://github.com/zhmichael007/cluster-autoscaler-gke/blob/main/image/priorityscaleout.png" width="75%" height="75%">
 
 
