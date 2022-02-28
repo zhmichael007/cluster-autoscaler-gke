@@ -1,7 +1,7 @@
 open cloud shell:  
 
 ```bash
-git clone https://github.com/zhmichael007/cluster-autoscaler-gke.git  
+git clone https://github.com/zhmichael007/cluster-autoscaler-gke.git
 cd cluster-autoscaler-gke/
 ```
 open setup.sh, modify the service account name in this file:  
