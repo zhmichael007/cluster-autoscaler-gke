@@ -3,7 +3,7 @@
 CLUSTER_NAME=cluster-autoscaler
 HIGH_MEM_SPOT=("e2-custom-4-32768" "n2-custom-4-32768" "n2d-custom-4-32768")
 HIGH_CPU_SPOT=("e2-custom-4-8192" "n2-custom-4-8192" "t2d-standard-4" "n2d-custom-4-8192" "c2-standard-4")
-SA_NAME="project-admin@zhmichael1.iam.gserviceaccount.com"
+SA_NAME=<Your Service Account Name>
 
 echo "start GKE node pool provisioning, cluster name: "$CLUSTER_NAME
 
