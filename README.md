@@ -4,6 +4,9 @@ git clone https://github.com/zhmichael007/cluster-autoscaler-gke.git
 
 cd cluster-autoscaler-gke/  
 
+open setup.sh, modify the service account name in this file:  
+SA_NAME=<Your Service Account Name>
+
 bash setup.sh
 
 the node pool design:  
