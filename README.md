@@ -9,6 +9,7 @@ open setup.sh, modify the service account name in this file:
 SA_NAME=<Your Service Account Name>
 ```
 
+Use bash to execute the .sh file to create the cluster automatically:  
 ```bash
 bash setup.sh
 ```
